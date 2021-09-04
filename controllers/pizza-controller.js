@@ -1,4 +1,4 @@
-const { Pizza } = require('../models');
+const Pizza = require('../models/Pizza');
 
 //method for finding all pizza data and specific pizza by it's _id.
 const pizzaController = {

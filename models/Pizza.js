@@ -18,8 +18,20 @@ const PizzaSchema = new Schema({
     toppings: []
 });
 
+function getAllPizza() {
+
+}
+
+function find() {
+
+}
+
+function create() {
+
+}
+
 //create the pizza model using the PizzaSchema
 const Pizza = model('Pizza', PizzaSchema);
 
 //export the Pizza model
-model.exports = Pizza;
+module.exports = Pizza;
