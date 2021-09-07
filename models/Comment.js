@@ -47,6 +47,11 @@ const CommentSchema = new Schema({
     id: false
 });
 
+//virtual to get total reply count just like pizza.js
+CommentSchema.virtual('replyCount').get(function() {
+    return this.replies.length;
+});
+
 const Comment = model('Comment', CommentSchema);
 
 module.exports = Comment;
